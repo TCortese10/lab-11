@@ -19,15 +19,19 @@ class ProductProperties{
 // subclass of productProperties
 class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {
-        super(name, price, quantity);
-        this.expirationDate = expirationDate;
+        super(name, price, quantity); // calls the parent constructor
+        this.expirationDate = expirationDate; // add expiration date
     }
 
-    toString () {
+    toString () { //overwrites and adds expiration date
         console.log(`Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`);
     }
 
 }
 
+// two instances of the PerishableProcuts class
 let item1 = new PerishableProductProperties("Banana", 25, 5, "2025-05-10");
 item1.toString();
+
+let item2 = new PerishableProductProperties("Canned Soup", 5, 108, "2032-03-21");
+item2.toString();
