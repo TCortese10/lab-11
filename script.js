@@ -14,6 +14,10 @@ class ProductProperties{
         console.log(`Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`);
     }
 
+    static applyDiscount(products, discount) {
+        
+    }
+
 }
 
 // subclass of productProperties
