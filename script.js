@@ -42,3 +42,12 @@ item1.toString();
 
 let item2 = new PerishableProductProperties("Canned Soup", 5, 108, "2032-03-21");
 item2.toString();
+
+//created new items and array that applies a discount
+
+let item3 = new ProductProperties("Beans", 15, 12);
+let item4 = new ProductProperties("Peas", 22.50, 23);
+let item5 = new ProductProperties("Carrots", 8.50, 455);
+let item6 = new ProductProperties("Beans", 15.25, 233);
+
+ProductProperties.applyDiscount([item3, item4, item5, item6], 0.2);
