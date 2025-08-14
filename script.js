@@ -9,6 +9,10 @@ class ProductProperties{
     getTotalValue() {
         return this.price * this.quantity;
     }
+    // displays product information
+    toString () {
+        console.log(`Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`);
+    }
 
 
 }
