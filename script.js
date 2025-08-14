@@ -28,3 +28,6 @@ class PerishableProductProperties extends ProductProperties {
     }
 
 }
+
+let item1 = new PerishableProductProperties("Banana", 25, 5, "2025-05-10");
+item1.toString();
