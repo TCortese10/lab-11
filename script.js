@@ -13,8 +13,11 @@ class ProductProperties{
     toString () {
         console.log(`Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`);
     }
-
+        // static method created
     static applyDiscount(products, discount) {
+        for (let product of products) { // goes through each item and then applies the discount
+            product.price = product.price - (product.price * discount)
+        }
         
     }
 
