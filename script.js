@@ -14,5 +14,9 @@ class ProductProperties{
         console.log(`Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`);
     }
 
+}
 
+// subclass of productProperties
+class PerishableProductProperties extends ProductProperties {
+    
 }
